@@ -11,8 +11,8 @@
 // @run-at      document-idle
 // @grant       none
 // @supportURL  https://github.com/ze0n/user-scripts/issues
-// @updateURL   https://raw.githubusercontent.com/ze0n/user-scripts/master/github-expand-pr-comments.user.js
-// @downloadURL https://raw.githubusercontent.com/ze0n/user-scripts/master/github-expand-pr-comments.user.js
+// @updateURL   https://raw.githubusercontent.com/ze0n/user-scripts/master/github/github-expand-pr-comments.user.js
+// @downloadURL https://raw.githubusercontent.com/ze0n/user-scripts/master/github/github-expand-pr-comments.user.js
 // ==/UserScript==
 
 (function() {
