@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Expand all PR comments
-// @version     1.0.1
+// @version     1.0.2
 // @description Add a button "Expand" which expands automatically all comments on the PR page marked with "hidden items" or "hidden conversations" and initially requiring iterative manual clicking.
 // @license     MIT
 // @author      Konstantin Knyazkov
@@ -161,13 +161,11 @@
         hideAllResolvedComments();
     }
 
-    window.addEventListener('load', () => {
-        const btn = addExpandButton(expandButtonExpandText, expandButtonClickFunction);
-        const btn2 = addExpandButton(hideResolvedButtonText, hideResolvedButtonClickFunction);
+    const btn = addExpandButton(expandButtonExpandText, expandButtonClickFunction);
+    const btn2 = addExpandButton(hideResolvedButtonText, hideResolvedButtonClickFunction);
 
-        if(DEBUG){
-            console.log("Expand button has been added", btn);
-        }
-    })
+    if(DEBUG){
+        console.log("Expand button has been added", btn);
+    }
 
 })();
